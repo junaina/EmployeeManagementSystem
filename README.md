@@ -134,8 +134,8 @@ The Employee Management System is a JavaFX application designed to manage variou
 - Click on the "Generate Monthly Payroll Report" button to generate the monthly payroll report.
 
 ## Contributors
-
+- Nur Junaina
 - Esha Riaz
 - Warda Aziz
 - Amna Noor
-- Nur Junaina
+
