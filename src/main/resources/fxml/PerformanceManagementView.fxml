@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PerformanceManagementController" prefWidth="600" prefHeight="400">
+    <children>
+        <TableView fx:id="employeeTable" prefHeight="200">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID"/>
+                <TableColumn fx:id="nameColumn" text="Name"/>
+                <TableColumn fx:id="positionColumn" text="Position"/>
+                <TableColumn fx:id="departmentColumn" text="Department"/>
+                <TableColumn fx:id="performanceFactorColumn" text="Performance Factor"/>
+            </columns>
+        </TableView>
+        <HBox spacing="10">
+            <Label text="Select Employee:"/>
+            <ComboBox fx:id="employeeComboBox"/>
+        </HBox>
+        <HBox spacing="10">
+            <Label text="Performance Factor:"/>
+            <ComboBox fx:id="performanceFactorComboBox">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Very Good"/>
+                        <String fx:value="Good"/>
+                        <String fx:value="Neutral"/>
+                        <String fx:value="Bad"/>
+                        <String fx:value="Very Bad"/>
+                    </FXCollections>
+                </items>
+            </ComboBox>
+        </HBox>
+        <Button text="Update Performance Factor" onAction="#handleUpdatePerformance"/>
+    </children>
+</VBox>

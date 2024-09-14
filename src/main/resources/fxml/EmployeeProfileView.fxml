@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeProfileController" spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <children>
+        <Label text="Employee Profile"/>
+        <Label text="ID:"/>
+        <Label fx:id="idLabel"/>
+        <Label text="Name:"/>
+        <Label fx:id="nameLabel"/>
+        <Label text="Position:"/>
+        <Label fx:id="positionLabel"/>
+        <Label text="Department:"/>
+        <Label fx:id="departmentLabel"/>
+        <Label text="Performance Factor:"/>
+        <Label fx:id="performanceFactorLabel"/>
+        <!-- Additional fields for tasks and leave requests -->
+    </children>
+</VBox>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeLeaveController" spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10" />
+    </padding>
+    <children>
+        <ComboBox fx:id="employeeComboBox" onAction="#loadLeaveRequests"/>
+        <DatePicker fx:id="startDatePicker" />
+        <DatePicker fx:id="endDatePicker" />
+        <Button text="Submit Leave Request" onAction="#handleSubmitLeaveRequest" />
+        <TableView fx:id="leaveRequestTable">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="employeeIdColumn" text="Employee ID" />
+                <TableColumn fx:id="employeeNameColumn" text="Employee Name" />
+                <TableColumn fx:id="startDateColumn" text="Start Date" />
+                <TableColumn fx:id="endDateColumn" text="End Date" />
+                <TableColumn fx:id="statusColumn" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</VBox>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeListController" spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <children>
+        <TableView fx:id="employeeTable">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID"/>
+                <TableColumn fx:id="nameColumn" text="Name"/>
+                <TableColumn fx:id="positionColumn" text="Position"/>
+                <TableColumn fx:id="departmentColumn" text="Department"/>
+                <TableColumn fx:id="performanceFactorColumn" text="Performance Factor"/>
+            </columns>
+        </TableView>
+        <HBox spacing="10">
+            <Button text="Add" onAction="#handleAddEmployee"/>
+            <Button text="Update" onAction="#handleUpdateEmployee"/>
+            <Button text="Delete" onAction="#handleDeleteEmployee"/>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeTaskController">
+    <children>
+        <ComboBox fx:id="employeeFilterComboBox" promptText="Select Employee" onAction="#filterTasksByEmployee"/>
+        <TableView fx:id="taskTable">
+            <columns>
+                <TableColumn fx:id="taskIdColumn" text="Task ID" />
+                <TableColumn fx:id="employeeIdColumn" text="Employee ID" />
+                <TableColumn fx:id="taskDescriptionColumn" text="Description" />
+                <TableColumn fx:id="completionStatusColumn" text="Status" />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="statusComboBox" promptText="Select Status"/>
+        <Button text="Update Status" onAction="#handleUpdateStatus" />
+    </children>
+</VBox>

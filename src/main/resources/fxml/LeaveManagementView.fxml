@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.LeaveManagementController">
+    <children>
+        <ComboBox fx:id="employeeComboBox" layoutX="14.0" layoutY="14.0" />
+        <DatePicker fx:id="startDatePicker" layoutX="14.0" layoutY="50.0" />
+        <DatePicker fx:id="endDatePicker" layoutX="14.0" layoutY="86.0" />
+        <Button text="Approve Leave" layoutX="14.0" layoutY="122.0" onAction="#handleApproveLeave" />
+        <Button text="Reject Leave" layoutX="120.0" layoutY="122.0" onAction="#handleRejectLeave" />
+        <TableView fx:id="leaveRequestTable" layoutX="14.0" layoutY="160.0">
+            <columns>
+                <TableColumn fx:id="employeeColumn" text="Employee" />
+                <TableColumn fx:id="startDateColumn" text="Start Date" />
+                <TableColumn fx:id="endDateColumn" text="End Date" />
+                <TableColumn fx:id="statusColumn" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

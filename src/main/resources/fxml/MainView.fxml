@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <children>
+        <Button text="View Employees" onAction="#openEmployeeListView"/>
+        <Button text="Employee Profile" onAction="#openEmployeeProfileView"/>
+        <Button text="Leave Application" onAction="#openEmployeeLeaveView"/>
+        <Button text="Employee Task Management" onAction="#openEmployeeTaskView"/>
+        <Button text="Manager Task Management" onAction="#openManagerTaskView"/>
+        <Button text="Performance Management" onAction="#openPerformanceManagementView"/>
+        <Button text="Employee Performance Summary Report" onAction="#generateEmployeePerformanceSummaryReport"/>
+        <Button text="Leave Management Analysis Report" onAction="#generateLeaveManagementAnalysisReport"/>
+        <Button text="Task Completion Efficiency Report" onAction="#generateTaskCompletionEfficiencyReport"/>
+        <Button text="Departmental Productivity Report" onAction="#generateDepartmentalProductivityReport"/>
+        <Button text="View Employee Payroll Details" onAction="#viewEmployeePayrollDetails"/>
+        <Button text="Generate Monthly Payroll Report" onAction="#generateMonthlyPayrollReport"/>
+        <Button text="Manager's Leave Functions" onAction="#openManagerLeaveFunctionsView"/>
+
+        <StackPane fx:id="mainContainer"/>
+    </children>
+</VBox>
